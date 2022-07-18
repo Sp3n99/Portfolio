@@ -1,0 +1,177 @@
+
+.skills{
+    height: 500px;
+    display: flex;
+    border-top: 3px solid rgba(0, 0, 0, 0.068);
+    background-color: rgb(250, 248, 250);
+
+    .skillsHeader{
+        height: 20%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skillsWrapper{
+        width: 30%;
+        @media only screen and (max-width: 1000px){
+            width: 100%;
+        }
+        height: 90%;
+    }
+
+    .logosWrapper{
+        display: flex;
+        height: 80%;
+        align-items: flex-end;
+        width: 100%;
+
+        .left{
+            display: flex;
+            width: 50%;
+            height: 100%;
+            flex-direction: column;
+            align-items: flex-end;
+            .fade-in{
+                opacity: 0;
+            }
+
+            .logo-wrapper{
+
+                .title{
+                    display: none;
+                    opacity: 0%;
+                }
+                &:hover {
+                    .title{
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        opacity: 100%;
+                    }
+                }
+            }
+
+            .logo{
+                height: 125px;
+                width: 125px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all .1s;
+                padding-bottom: 5px;
+
+                &:hover{
+                    transform: scale(105%);
+                }
+            }
+
+
+            .react{
+                width: 115px;
+                height: 115px;
+                padding-right: 5px;
+            }
+
+            .scss{
+                width: 110px;
+                height: 110px;
+                padding-top: 15px;
+                padding-right: 3px;
+                padding-bottom: 7px;
+            }
+
+            .appear{
+                animation: skills-anim-left 1.5s forwards;
+    
+            }
+
+        }
+
+        .right{
+            display: flex;
+            width: 50%;
+            height: 100%;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            .fade-in{
+                opacity: 0;
+            }
+            .node{
+                padding-bottom: 10px;
+            }
+
+
+
+            .logo{
+                height: 125px;
+                width: 125px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all .1s;
+                padding-bottom: 5px;
+
+                &:hover{
+                    transform: scale(105%);
+                }
+            }
+
+            .logo-wrapper{
+
+                .title{
+                    display: none;
+                    opacity: 0%;
+                }
+                &:hover {
+                    .title{
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        opacity: 100%;
+                    }
+                }
+            }
+
+            .appear{
+                animation: skills-anim-right 1.5s forwards;
+            }
+        }
+
+    }
+
+}
+
+@keyframes skills-anim-left{
+    0%{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    50%{
+        opacity: .7;
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes skills-anim-right{
+    0%{
+        opacity: 0;
+        transform: translateX(200px);
+    }
+
+    50%{
+        opacity: .7;
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

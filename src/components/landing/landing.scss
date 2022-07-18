@@ -1,0 +1,116 @@
+
+.landing{
+    background-color: #8b94a8;
+    animation: bg 3s ease-in;
+    display: flex;
+    flex-direction: column;
+    .top{
+        height: 70vh;
+
+        @media only screen and (max-width: 1000px){
+           height: 40vh;
+        }
+
+        .spencer-wrapper{
+            padding-top: 10vh;
+            padding-left: 10vw;
+            font-size: 80px;
+            color: #ffffff;
+            display: flex;
+            @media only screen and (max-width: 1000px){
+                padding-left: 5vw;
+                padding-top: 5vh;
+            }
+
+        }
+
+        .spencer{
+            @media only screen and (max-width: 1000px){
+                font-size: 48px;
+            }
+        }
+
+        .r{
+            padding-right: 5vw;
+            transform: rotate(0deg);
+
+        }
+    
+        .call-to-action{
+            padding-left: 10.3vw;
+            padding-top: 2vh;
+            font-size: 32px;
+            color: #051615;
+
+            @media only screen and (max-width: 1000px){
+                font-size: 24px;
+                padding-left: 5.2vw;
+                padding-top: 2vw;
+                width: 75%;
+            }
+        }
+    }
+
+    .floater{
+        background-color: rgba(255, 255, 255, 1);
+        transform: translateY(0px);
+        animation: float 1s;
+        
+
+        .projects-wrapper{
+            animation: grow 1.8s;
+        }
+    }
+
+
+}
+
+
+@keyframes float{
+    0%{
+        transform: translateY(-100vh) translateX(25vw) scaleX(.01);
+        height: 100vh;
+        background-color: rgba(255, 240, 27, 0.644);
+    }
+    60%{
+        transform: translateY(0px) translateX(25vw) scaleX(.1);
+        height: 50vh;
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    100%{
+        transform: translateY(0px) translateX(0px) scaleX(1);
+        height: 50vh;
+    }
+}
+
+@keyframes grow{
+    0%{
+        transform: scale(0);
+    }
+
+    60%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes rotater{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    80%{
+        transform: rotate(0deg);
+    }
+
+    90%{
+        transform: rotate(3deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}

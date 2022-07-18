@@ -1,0 +1,38 @@
+{
+    "projects": [
+        {
+            "title": "E-Commerce Website",
+            "description": "Full stack e-commerce website with user authentication",
+            "tools": [
+                "React",
+                "Node",
+                "Express",
+                "MongoDB"
+            ],
+            "objective": "Gain experience implementing user authentication.",
+            "img": "ecommerce1.png"
+        },
+        {
+            "title": "Admin Dashboard",
+            "description": "Full stack admin dashboard with graphs and toggleable dark mode",
+            "tools": [
+                "React",
+                "MUI",
+                "Recharts",
+                "Firebase"
+            ],
+            "objective": "Gain experience building a backend with firebase / gain experience creating charts using the Recharts library.",
+            "img": "dashboard.png"
+        },
+        {
+            "title": "E-Commerce Website",
+            "description": "Front end fashion E-Commerce website with animations",
+            "tools": [
+                "React",
+                "MUI"
+            ],
+            "objective": "Gain experiencing using MUI to speed up the front end development process.",
+            "img": "ecommerce2.png"
+        }
+    ]
+}

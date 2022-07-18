@@ -1,24 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import { UIProvider } from './context/ui';
+import AppBar from './components/appbar';
+import Projects from './components/projects';
+import { ThemeProvider, useMediaQuery } from '@mui/material';
+import theme from './styles/theme';
+import Footer from './components/footer';
+import Skills from "./components/skills"
+import Landing from './components/landing';
 
 function App() {
+
+  const matches = useMediaQuery(theme.breakpoints.down('sm'));
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <UIProvider>
+        <Landing />
+        <Skills />
+        <Footer />
+      </UIProvider>
+    </ThemeProvider>
   );
 }
 
