@@ -10,11 +10,13 @@
                 "MongoDB"
             ],
             "objective": "Gain experience implementing user authentication.",
-            "img": "ecommerce1.png"
+            "img": "ecommerce1.png",
+            "site": "http://ecommerce.spencerrasor.com",
+            "github": "https://github.com/Sp3n99/Full-Stack-e-commerce"
         },
         {
             "title": "Admin Dashboard",
-            "description": "Full stack admin dashboard with graphs and toggleable dark mode",
+            "description": "Full stack admin dashboard with graphs, login validation, and toggleable dark mode",
             "tools": [
                 "React",
                 "MUI",
@@ -22,7 +24,9 @@
                 "Firebase"
             ],
             "objective": "Gain experience building a backend with firebase / gain experience creating charts using the Recharts library.",
-            "img": "dashboard.png"
+            "img": "dashboard.png",
+            "site": "http://dashboard.spencerrasor.com",
+            "github": "https://github.com/Sp3n99/Dashboard"
         },
         {
             "title": "E-Commerce Website",
@@ -32,7 +36,9 @@
                 "MUI"
             ],
             "objective": "Gain experiencing using MUI to speed up the front end development process.",
-            "img": "ecommerce2.png"
+            "img": "ecommerce2.png",
+            "site": "http://bags.spencerrasor.com",
+            "github": "https://github.com/Sp3n99/Fashion-e-commerce"
         }
     ]
 }

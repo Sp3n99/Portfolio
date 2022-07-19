@@ -12,13 +12,13 @@ const  Landing = () => {
             <div className="bar">
             <Box sx={{display: 'flex', flexWrap: 'wrap' , justifyContent: 'flex-end'}}>
                 <IconButton href="https://github.com/Sp3n99" target="_blank">
-                    <GitHubIcon sx={{fontSize: '50px'}}/>
+                    <GitHubIcon sx={{fontSize:{lg: '50px', xl: '120px', xxl: '150px'}}}/>
                 </IconButton>
                 <IconButton href="https://www.linkedin.com/in/spencer-rasor/" target="_blank">
-                    <LinkedInIcon sx={{fontSize: '50px'}}/>
+                    <LinkedInIcon sx={{fontSize:{lg: '50px', xl: '125px', xxl: '150px'}}}/>
                 </IconButton>
                 <IconButton href="https://www.facebook.com/spencerrasor1/" target="_blank">
-                    <FacebookIcon sx={{fontSize: '50px'}}/>
+                    <FacebookIcon sx={{fontSize:{lg: '50px', xl: '125px', xxl: '150px'}}}/>
                 </IconButton>
             </Box>
             </div>
