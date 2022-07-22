@@ -20,7 +20,7 @@ const ProjectCard = ({ title, description, tools, objective, img, site, github})
   const image = require(`../../images/${img}`);
 
   return (
-    <Card sx={{borderRadius: '30px', backgroundColor: 'white'}}className="card">
+    <Card sx={{borderRadius: '30px', backgroundColor: 'white', border: '20px solid #8b94a8'}}className="card">
       <CardMedia component="img" sx={{height: {xs: '280px', xl: '400px', xxl: '600px'}}} image={image} className="card-media">
       </CardMedia>
       <CardContent sx={{minHeight: {xs: '150px', lg: '150px', xl: '250px', xxl: '400px'}}}>
